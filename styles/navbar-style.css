@@ -1,0 +1,51 @@
+@import 'colorgraphy.css';
+
+nav {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 100;
+}
+
+.container {
+	width: 1200px;
+	margin: 0px auto;
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	padding: 30px 0px;
+}
+
+.page-title {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-right: 30px;
+}
+
+.menu {
+    color: var(--white);
+    padding: 0px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.current-menu {
+    color: var(--white);
+    padding: 0px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.profile-search {
+    color: var(--white);
+    padding: 0px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    justify-content: flex-end;
+}

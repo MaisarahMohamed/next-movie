@@ -1,0 +1,28 @@
+.column {
+    padding: 10px;
+    height: 560px;
+}
+
+.left {
+    float: left;
+    width: 40%;
+    background-color: #3d3d3d;
+}
+
+.right {
+    float: right;
+    width: 60%;
+    background-color: #302d28;
+    
+}
+
+.row{
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
