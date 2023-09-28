@@ -1,11 +1,10 @@
-@import 'colorgraphy.css';
-
 nav {
     position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	z-index: 100;
+    color: white;
 }
 
 .container {
@@ -18,7 +17,6 @@ nav {
 }
 
 .page-title {
-    color: var(--white);
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -26,7 +24,6 @@ nav {
 }
 
 .menu {
-    color: var(--white);
     padding: 0px 20px;
     font-size: 16px;
     font-weight: 400;
@@ -34,15 +31,15 @@ nav {
 }
 
 .current-menu {
-    color: var(--white);
     padding: 0px 20px;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
+    border-bottom-width: 50%;
+    border-bottom: 3px solid #fed530;
 }
 
 .profile-search {
-    color: var(--white);
     padding: 0px 20px;
     font-size: 16px;
     font-weight: 400;

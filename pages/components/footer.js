@@ -1,4 +1,7 @@
 import { PiArrowRightBold } from "react-icons/pi";
+import { IoLocationOutline } from "react-icons/io5";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsTelephone } from "react-icons/bs";
 
 const Footer = () => {
     return (
@@ -38,10 +41,10 @@ const Footer = () => {
                             <li><p>Videos</p></li>
                         </ul>
                     </div>
-                    <div className="space-between">
-                        <div>8819 Ohio St. South Gate, California 90280</div>
-                        <div>ourstudio@hello.com</div>
-                        <div>+271 386-647-3637</div>
+                    <div className="space-between" style={{alignItems:'center'}}>
+                        <div><IoLocationOutline style={{paddingRight:'10px', fontSize:'32px', verticalAlign:'middle'}}/>8819 Ohio St. South Gate, California 90280</div>
+                        <div><AiOutlineMail style={{paddingRight: '10px', fontSize:'32px', verticalAlign:'middle'}}/>ourstudio@hello.com</div>
+                        <div><BsTelephone style={{paddingRight: '10px', fontSize:'32px', verticalAlign:'middle'}}/>+271 386-647-3637</div>
                     </div>
                 </div>
             </div>

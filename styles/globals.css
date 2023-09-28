@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap');
-@import 'colorgraphy.css';
 
 * {
 	font-family: 'DM Sans', sans-serif;
@@ -55,7 +54,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: var(--white);
+	color: white;
 }
 
 .font-bold {
@@ -68,9 +67,4 @@ a {
 
 .font-regular {
 	font-weight: 400;
-}
-
-a {
-  color: #333;
-  text-decoration: none;
 }
