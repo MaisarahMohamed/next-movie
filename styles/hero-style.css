@@ -2,5 +2,45 @@
 	height: 100vh;
 	width: 100%;
 	background: linear-gradient(270deg, #1e1e1e 0%, #525252 100%);
-    position: relative;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.hero-content{
+	color: white;
+	width: 70%;
+	height: 60%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero-play-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fed530;
+	height: 274px;
+	width: 274px;
+}
+
+.hero-right-content{
+	width: 65%;
+}
+
+.play-btn{
+	align-items: center;
+    display: flex;
+    justify-content: center;
+	color: black;
+	background: #fed530;
+	height: 121px;
+	width: 121px;
+	border-radius: 100px;
+}
+
+.progress-bar{
+	width: 274px;
+	height: 274px;
 }
