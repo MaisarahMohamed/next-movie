@@ -1,11 +1,11 @@
 import SearchResult from "./components/search-result";
 import TopSection from "./components/top-section-search";
 
-export default function SearchTheatre() {
+export default function Search() {
     return (
-      <div>
-        <TopSection />
-        <SearchResult />
-      </div>
+        <div>
+            <TopSection />
+            <SearchResult />
+        </div>
     );
-  }
+}

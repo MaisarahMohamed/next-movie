@@ -1,0 +1,98 @@
+.input-field{
+    border-radius: 40px;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    align-items: center;
+}
+input{
+    background: none;
+    border: none;
+    font-size: 21px;
+}
+
+input[type="date"] {
+    position: relative;
+}
+
+input[type="datetime-local"] {
+    position: relative;
+}
+
+input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: transparent;
+    background: transparent;
+}
+
+input::placeholder{
+
+    color:#00000073;
+}
+
+input:focus{
+    outline: none;
+}
+
+.textfield .MuiOutlinedInput-root {
+    border-radius: 40px;
+    background: white;
+    size: small;
+}
+
+.textfield::placeholder{
+    font-size: 21;
+    color:#00000073;
+}
+
+.btn{
+    border-radius: 27px;
+    border: none;
+    background: #FED530;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.tab-container{
+    padding-top: 10px;
+}
+
+.tab-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+.tab-item {
+    cursor: pointer;
+    padding: 5px 20px;
+    border: 1px solid #FED530;
+    background-color: white;
+    color: #FED530;
+    font-size: 18px;
+}
+
+.tab-item:first-child{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.tab-item:nth-child(2){
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.tab-item.active {
+    background-color: #FED530; /* Change the background color when active */
+    color: black; /* Change the text color when active */
+}
+  

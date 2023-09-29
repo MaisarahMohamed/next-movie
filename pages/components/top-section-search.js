@@ -1,8 +1,24 @@
 import {BiRightArrow } from "react-icons/bi";
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import SearchTheatre from "./search-theater";
+import SearchTimeslot from "./search-timeslot";
+import React, { useState } from 'react';
 
-const TopSection = () => {
+const TopSection = () => {  
+    const [activeTab, setActiveTab] = useState(0);
+
+    const tabs = [
+      {
+        title: 'Search By Theatre',
+        content: <SearchTheatre/>,
+      },
+      {
+        title: 'Search By TimeSlot',
+        content: <SearchTimeslot/>,
+      },
+    ];
+
     return ( 
         <section className="hero-container">
             <div className="hero-content">
@@ -18,9 +34,18 @@ const TopSection = () => {
                 </div>
                 <div className="hero-right-content">
                     <h3>Search your movies here!</h3>
-                    <div style={{paddingTop:'30px',width:'75%'}}>
-                        
-                    </div>
+                    <div className="tab-container">
+                        <ul className="tab-list">
+                            {tabs.map((tab, index) => (
+                                <li key={index} className={`tab-item ${index === activeTab ? 'active' : ''}`}onClick={() => setActiveTab(index)}>
+                                    {tab.title}
+                                </li>
+                            ))}
+                        </ul>
+                        <div className="tab-content">
+                            {tabs[activeTab].content}
+                        </div>
+                        </div>
                 </div>
             </div>
         </section>

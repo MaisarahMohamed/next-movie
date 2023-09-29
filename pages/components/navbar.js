@@ -15,7 +15,7 @@ const NavBar = () => {
                 <div className={"menu"}><Link href="/" key={5}>FAQ</Link></div>
                 <div className={"menu"}><Link href="/" key={6}>Pricing</Link></div>
                 <div className={"menu"}><Link href="/" key={7}>Contact Us</Link></div>
-                <div className={"menu"}><Link href="/search-theater"><FiSearch/></Link></div>
+                <div className={"menu"}><Link href="/search"><FiSearch/></Link></div>
                 <div className={"menu"}><Link href="/">John Glich</Link></div>
 			</div>
         </nav>
