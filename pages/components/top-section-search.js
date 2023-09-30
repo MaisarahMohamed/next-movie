@@ -14,7 +14,7 @@ const TopSection = () => {
         content: <SearchTheatre/>,
       },
       {
-        title: 'Search By TimeSlot',
+        title: 'Search By Timeslot',
         content: <SearchTimeslot/>,
       },
     ];
@@ -45,7 +45,7 @@ const TopSection = () => {
                         <div className="tab-content">
                             {tabs[activeTab].content}
                         </div>
-                        </div>
+                    </div>
                 </div>
             </div>
         </section>

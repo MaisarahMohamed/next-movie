@@ -23,6 +23,8 @@
 .search-card{
     height: 560px;
     background: linear-gradient(0deg, #1e1e1e 0% ,#525252 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
 	align-items: center;
@@ -31,6 +33,8 @@
 .card{
     height: 560px;
     background: linear-gradient(0deg, #1e1e1e 0% ,#525252 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
 	align-items: center;

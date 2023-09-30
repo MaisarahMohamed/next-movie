@@ -1,5 +1,6 @@
-import { BiTimeFive } from "react-icons/bi";
-import { AiOutlineEye } from "react-icons/ai";
+import React from 'react';
+import Card from './card';
+import { NewReleasesProvider } from '../api/movies/contexts/new-releases-context';
 
 const NewRelease = () => {
     return ( 
@@ -9,46 +10,9 @@ const NewRelease = () => {
                 <h2 className="font-medium">New Releases</h2>
                 <h5 style={{color:'#fed530'}}>View More</h5>
             </div>
-            <div className="grid-container">
-            <div className="card">
-                <div className="card-content">
-                    <div className="card-genre">
-                        Fantasy
-                    </div>
-                    <div>
-                        <div className="duration-view">
-                            <div style={{paddingRight:'30px'}}><BiTimeFive style={{paddingRight:'10px', fontSize:'28px',verticalAlign:'middle'}}/>
-                                1hr 2min
-                            </div>
-                            <div>
-                                <AiOutlineEye style={{paddingRight:'10px', fontSize:'28px',verticalAlign:'middle'}}/>
-                                100K
-                            </div>
-                        </div>
-                        <h2 className="font-medium">Movie Title</h2>
-                    </div>
-                </div>
-            </div>
-            <div className="card">
-                <div className="card-content">
-                    <div className="card-genre">
-                        Fantasy
-                    </div>
-                    <div>
-                        <div className="duration-view">
-                            <div style={{paddingRight:'30px'}}><BiTimeFive style={{paddingRight:'10px', fontSize:'28px',verticalAlign:'middle'}}/>
-                                1hr 2min
-                            </div>
-                            <div>
-                                <AiOutlineEye style={{paddingRight:'10px', fontSize:'28px',verticalAlign:'middle'}}/>
-                                100K
-                            </div>
-                        </div>
-                        <h2 className="font-medium">Movie Title</h2>
-                    </div>
-                </div>
-            </div>
-            </div>
+            <NewReleasesProvider>
+                <Card />
+            </NewReleasesProvider>
         </div>
     </section>
     );
