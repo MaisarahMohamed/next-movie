@@ -16,6 +16,7 @@ const NavBar = () => {
                 <div className={"menu"}><Link href="/" key={6}>Pricing</Link></div>
                 <div className={"menu"}><Link href="/" key={7}>Contact Us</Link></div>
                 <div className={router.pathname === "/search" ? "current-menu" : "menu"}><Link  href="/search"><FiSearch/></Link></div>
+                <div className={"menu"}><Link href="/"><div className='profile-picture'/></Link></div>
                 <div className={"menu"}><Link href="/">John Glich</Link></div>
 			</div>
         </nav>

@@ -28,7 +28,7 @@ const Card = () => {
                                 {movie?.Views}
                             </div>
                         </div>
-                            <h2 className="font-medium">{movie?.Title}</h2>
+                            <h2 className="font-medium" style={{whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'clip'}}>{movie?.Title}</h2>
                         </div>
                     </div>
                 </div>
